@@ -1264,8 +1264,9 @@ a {
   /* --- Hero --- */
   .hero-inner {
     height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, auto);
     grid-template-rows: auto auto;
     align-content: end;
     align-items: end;
@@ -1283,7 +1284,7 @@ a {
   .hero-title {
     grid-column: 1 / -1;
     grid-row: 1;
-    font-size: clamp(48px, 13vw, 64px);
+    font-size: clamp(32px, 11vw, 64px);
     line-height: 1;
   }
   .hero-title .c {
@@ -1292,8 +1293,8 @@ a {
   .hero-logo {
     grid-column: 1;
     grid-row: 2;
-    width: 65vw;
-    max-width: 400px;
+    width: 55vw;
+    max-width: 320px;
     height: auto;
   }
   .hero-tag {
@@ -1301,7 +1302,7 @@ a {
     grid-row: 2;
     justify-self: end;
     margin-bottom: 1vw;
-    font-size: clamp(10px, 3.2vw, 15px);
+    font-size: clamp(10px, 2.8vw, 14px);
     text-align: right;
   }
 
