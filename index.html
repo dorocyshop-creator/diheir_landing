@@ -1036,6 +1036,10 @@ a {
     z-index: 0;
     pointer-events: none;
   }
+  .intro-olive img {
+    width: 100%;
+    height: auto;
+  }
   .intro-copy, .intro-foot {
     position: relative;
     z-index: 1;
@@ -1057,15 +1061,16 @@ a {
   }
   .intro-display.d1 {
     padding-right: 0;
-    transform: translateX(-8%);
+    transform: none;
   }
   .intro-display.d2 {
-    margin-top: -1.6rem;
-    transform: translateX(8%);
+    margin-top: 0;
+    transform: none;
   }
   .intro-headline {
     font-size: clamp(2.6rem, 4.4vw, 4rem);
     white-space: normal;
+    margin-block: 2rem;
   }
   .intro-copy {
     text-align: left;
