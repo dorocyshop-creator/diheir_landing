@@ -124,7 +124,7 @@ a {
 
 /* ===================== 01 Hero ===================== */
 .sec-hero {
-  height: 56.25vw;
+  height: calc(56.25 * var(--cvw));
   background: #12120d;
 }
 .hero-video {
@@ -137,8 +137,8 @@ a {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 100vw;
-  height: 56.25vw;
+  width: calc(100 * var(--cvw));
+  height: calc(56.25 * var(--cvw));
   min-height: 100%;
   min-width: 177.78vh;
   border: 0;
@@ -476,7 +476,7 @@ a {
 }
 @media (min-width: 1024px) {
   .benefits-inner {
-    width: 100vw;
+    width: calc(100 * var(--cvw));
     max-width: 131.506vh;
     aspect-ratio: 1920 / 1460;
     container-type: inline-size;
@@ -650,11 +650,11 @@ a {
   left: 50%;
   translate: -50% 0;
   top: calc(19.79 * var(--cvw));
-  width: 100vw;
+  width: calc(100 * var(--cvw));
   max-width: none;
-  height: 79.95vw;
+  height: calc(79.95 * var(--cvw));
   background: var(--moss);
-  border-radius: 50vw 50vw 0 0;
+  border-radius: calc(50 * var(--cvw)) calc(50 * var(--cvw)) 0 0;
 }
 .custom-sub {
   position: absolute;
@@ -865,9 +865,8 @@ a {
 /* Full parent width so no card is clipped by an offset origin. */
 .rail {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
+  left: 0;
+  right: 0;
   top: calc(25.82 * var(--cvw));
   overflow: hidden;
 }
@@ -1381,8 +1380,8 @@ a {
     height: auto;
     left: 50%;
     translate: -50% 0;
-    width: 100vw;
-    border-radius: 50vw 50vw 0 0;
+    width: calc(100 * var(--cvw));
+    border-radius: calc(50 * var(--cvw)) calc(50 * var(--cvw)) 0 0;
   }
   .custom-display,
   .custom-sub,
