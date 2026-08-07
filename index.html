@@ -2680,7 +2680,7 @@ if (rail) {
   const loop = (now) => {
     const dt = Math.min(now - lastTime, 50); // cap delta to 50ms
     lastTime = now;
-    if (!isInteracting) {
+    if (!isInteracting && !isMobile) {
       offset += 0.04 * dt; // approx 40px per second auto scroll
       const w = setWidth();
       if (w) {
