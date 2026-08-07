@@ -1315,7 +1315,7 @@ a {
   .sec-custom {
     height: auto;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
   .custom-inner {
     display: flex;
@@ -1323,8 +1323,8 @@ a {
     align-items: center;
   }
   .custom-dome {
-    top: 40px;
-    bottom: -100px;
+    top: 9vw;
+    bottom: -80px;
     height: auto;
     left: 50%;
     translate: -50% 0;
@@ -1342,32 +1342,35 @@ a {
     top: auto;
   }
   .custom-display {
-    font-size: clamp(48px, 14vw, 120px);
-    margin-bottom: 60px;
+    font-size: 14vw;
+    margin-bottom: 0;
     text-align: center;
   }
   .custom-sub {
-    font-size: clamp(28px, 8vw, 60px);
-    margin-bottom: 40px;
+    font-size: clamp(24px, 7vw, 60px);
+    margin-bottom: 30px;
     text-align: center;
   }
   .custom-video {
-    width: 70vw;
-    max-width: 400px;
-    height: 70vw;
-    max-height: 400px;
-    margin-bottom: 40px;
+    width: 50vw;
+    max-width: 300px;
+    height: 50vw;
+    max-height: 300px;
+    margin-bottom: 30px;
   }
   .custom-quote {
-    font-size: clamp(20px, 6vw, 40px);
-    margin-bottom: 32px;
+    font-size: clamp(18px, 5.5vw, 32px);
+    margin-bottom: 30px;
     text-align: center;
     white-space: normal;
+    word-break: keep-all;
   }
   .custom-copy {
     font-size: clamp(12px, 3.5vw, 15px);
     text-align: center;
     line-height: 1.6;
+    max-width: 340px;
+    word-break: keep-all;
   }
   .custom-copy p:not(:last-child) {
     margin-bottom: 1em;
