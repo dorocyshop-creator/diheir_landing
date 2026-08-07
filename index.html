@@ -1029,6 +1029,8 @@ a {
     position: absolute;
     bottom: 0;
     left: 0;
+    top: auto;
+    translate: none;
     width: 267px;
     max-width: none;
     height: auto;
@@ -1039,21 +1041,24 @@ a {
     width: 100%;
     height: auto;
   }
-  .intro-copy, .intro-foot {
-    position: relative;
-    z-index: 1;
-  }
   .intro-display,
   .intro-headline,
-  .intro-copy,
-  .intro-figure,
-  .intro-foot {
+  .intro-figure {
     position: static;
     translate: none;
     left: auto;
     right: auto;
     top: auto;
     bottom: auto;
+  }
+  .intro-copy, .intro-foot {
+    position: relative;
+    translate: none;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    z-index: 1;
   }
   .intro-display {
     font-size: clamp(6.4rem, 10vw, 12rem);
