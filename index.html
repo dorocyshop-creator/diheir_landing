@@ -1407,6 +1407,46 @@ a {
   .mo-br {
     display: inline;
   }
+
+  /* --- Collection (1.5x Scale) --- */
+  .sec-collection {
+    height: 75vw;
+  }
+  .rail-track {
+    gap: 1.875vw;
+  }
+  .col-card {
+    flex: 0 0 28.125vw;
+    height: 28.125vw;
+    padding: 1.56vw;
+  }
+  .col-card.is-low {
+    margin-top: 9.375vw;
+  }
+  .col-card .label {
+    font-size: max(var(--min-text), 1.56vw);
+  }
+  .col-card .label::before {
+    left: -0.465vw;
+    top: -0.075vw;
+    width: 25vw;
+    height: 2.5vw;
+  }
+  .col-card .name {
+    font-size: max(var(--min-text), 1.875vw);
+  }
+  .rail-nav {
+    top: 67vw;
+    width: 72.27vw;
+    gap: 1.875vw;
+  }
+  .rail-nav .arrow {
+    width: 3vw;
+    height: 3vw;
+  }
+  .rail-bar {
+    height: 0.15vw;
+  }
 }
 
 /* =========================================================
