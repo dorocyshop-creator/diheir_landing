@@ -1754,7 +1754,7 @@ a {
     <style>
       .sec-reservation {
         background: #383629;
-        padding: 100px 0;
+        padding: 5.21vw 0;
       }
       .res-container {
         position: relative;
@@ -1762,11 +1762,11 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 5.21vw;
       }
       .res-bg-text {
         position: absolute;
-        top: -20px;
+        top: -1.04vw;
         /* left: 0; */
         width: 90%;
         display: flex;
@@ -1780,16 +1780,16 @@ a {
         line-height: 1;
         opacity: 0.12;
         margin: 0;
-        letter-spacing: -6px;
+        letter-spacing: -0.31vw;
         white-space: nowrap;
         text-transform: capitalize;
       }
       .res-image-wrapper {
         position: relative;
         width: 90%;
-        max-width: 1400px;
-        padding: 0 16px;
-        margin-top: 120px;
+        max-width: 72.92vw;
+        padding: 0 0.83vw;
+        margin-top: 6.25vw;
         z-index: 5;
         box-sizing: border-box;
       }
@@ -1801,24 +1801,24 @@ a {
       .res-glass-card {
         position: relative;
         width: 100%;
-        max-width: 850px;
-        padding: 0 16px;
+        max-width: 44.27vw;
+        padding: 0 0.83vw;
         z-index: 10;
         box-sizing: border-box;
-        margin-top: -600px;
+        margin-top: -31.25vw;
       }
       .res-glass-inner {
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-radius: 32px;
+        border-radius: 1.67vw;
         border: 1px solid rgba(255,255,255,0.2);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         background: rgba(170, 166, 128, 0.1);
-        padding: 55px 58px 60px;
+        padding: 2.86vw 3.02vw 3.13vw;
         box-sizing: border-box;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1.3vw 2.6vw -0.63vw rgba(0, 0, 0, 0.25);
       }
       .res-form-section {
         background: #c8c9bc;
@@ -1826,21 +1826,21 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 100px 80px;
-        border-radius: 16px;
+        padding: 5.21vw 4.17vw;
+        border-radius: 0.83vw;
         box-sizing: border-box;
       }
       .res-address {
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 70px;
+        padding-top: 3.65vw;
         color: rgba(255,255,255,0.7);
       }
       .res-address-split {
         display: flex;
         justify-content: space-between;
-        gap: 32px;
+        gap: 1.67vw;
         font-size: 13px;
         line-height: 1.6;
         letter-spacing: -0.02em;
@@ -1889,28 +1889,28 @@ a {
             
             <!-- Form Section -->
             <div class="res-form-section">
-              <p class="en" style="font-size: clamp(32px, 6vw, 48px); color: #383629; text-align: center; margin-bottom: 50px; line-height: 1;">Reserve Appointment</p>
+              <p class="en" style="font-size: clamp(32px, 6vw, 48px); color: #383629; text-align: center; margin-bottom: 2.6vw; line-height: 1;">Reserve Appointment</p>
               
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSdk6sZtR3D9WEqknpSOKANA-DxMfnszfjWW8VjwO4QopDwIOA/formResponse" method="POST" target="hidden_iframe" onsubmit="handleReservationSubmit(event)" style="display:flex; flex-direction:column; align-items:center; width:100%; gap:40px;">
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSdk6sZtR3D9WEqknpSOKANA-DxMfnszfjWW8VjwO4QopDwIOA/formResponse" method="POST" target="hidden_iframe" onsubmit="handleReservationSubmit(event)" style="display:flex; flex-direction:column; align-items:center; width:100%; gap: 2.08vw;">
                 
-                <div style="display:flex; flex-direction:column; gap:30px; width:100%;">
+                <div style="display:flex; flex-direction:column; gap: 1.56vw; width:100%;">
                   <!-- Name -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">이름</p>
-                    <input required type="text" name="entry.1054060175" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">이름</p>
+                    <input required type="text" name="entry.1054060175" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                   <!-- Phone -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">연락처</p>
-                    <input required type="tel" name="entry.2074802535" placeholder="입력해주세요." maxlength="13" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">연락처</p>
+                    <input required type="tel" name="entry.2074802535" placeholder="입력해주세요." maxlength="13" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                   <!-- Visit Date -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">방문일시</p>
-                    <div style="display:flex; align-items:flex-end; gap:12px; width:100%;">
-                      <input required type="date" name="entry.626727524" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr); cursor:pointer;" />
-                      <select id="time-picker" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:130px; flex-shrink:0; padding-bottom:8px; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">방문일시</p>
+                    <div style="display:flex; align-items:flex-end; gap: 0.63vw; width:100%;">
+                      <input required type="date" name="entry.626727524" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer;" />
+                      <select id="time-picker" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:130px; flex-shrink:0; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                         <option value="" disabled selected>시간 선택</option>
                         <option value="10:30">오전 10:30</option>
                         <option value="11:00">오전 11:00</option>
@@ -1936,13 +1936,13 @@ a {
                   </div>
                   <!-- Email -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">이메일</p>
-                    <input required type="email" name="entry.134182212" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">이메일</p>
+                    <input required type="email" name="entry.134182212" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                   <!-- Source -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">유입 경로</p>
-                    <select required name="entry.146229832" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">유입 경로</p>
+                    <select required name="entry.146229832" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                       <option value="" disabled selected>선택해주세요.</option>
                       <option value="인스타그램">인스타그램</option>
                       <option value="네이버 검색">네이버 검색</option>
@@ -1953,8 +1953,8 @@ a {
                   </div>
                   <!-- Interest -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">관심분야</p>
-                    <select required name="entry.1755025064" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">관심분야</p>
+                    <select required name="entry.1755025064" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                       <option value="" disabled selected>선택해주세요.</option>
                       <option value="반지·프로포즈">반지·프로포즈</option>
                       <option value="목걸이">목걸이</option>
@@ -1966,8 +1966,8 @@ a {
                   </div>
                   <!-- Budget -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">예산 범위</p>
-                    <select required name="entry.339840614" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">예산 범위</p>
+                    <select required name="entry.339840614" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                       <option value="" disabled selected>선택해주세요.</option>
                       <option value="50만원 미만">50만원 미만</option>
                       <option value="50 ~ 100만원">50 ~ 100만원</option>
@@ -1979,18 +1979,18 @@ a {
                   </div>
                   <!-- Request -->
                   <div style="display:flex; align-items:flex-end; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width:90px; margin-bottom:8px;">요청사항</p>
-                    <input type="text" name="entry.399277218" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom:8px; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">요청사항</p>
+                    <input type="text" name="entry.399277218" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                 </div>
 
                 <!-- Checkboxes -->
-                <div style="display:flex; flex-direction:column; gap:16px; width:100%; margin-top:10px;">
-                  <div style="display:flex; align-items:center; gap:12px;">
+                <div style="display:flex; flex-direction:column; gap: 0.83vw; width:100%; margin-top: 0.52vw;">
+                  <div style="display:flex; align-items:center; gap: 0.63vw;">
                     <input id="privacy-agree" required type="checkbox" name="entry.831169210" value="네" style="flex-shrink:0;" />
                     <label for="privacy-agree" class="kr" style="color:#444429; font-size:14px; cursor:pointer;">개인정보 처리방침에 동의</label>
                   </div>
-                  <div style="display:flex; align-items:flex-start; gap:12px;">
+                  <div style="display:flex; align-items:flex-start; gap: 0.63vw;">
                     <input type="hidden" name="entry.430492874" id="marketing-hidden" value="아니오" />
                     <input id="marketing-agree" type="checkbox" onchange="document.getElementById('marketing-hidden').value = this.checked ? '네' : '아니오';" style="flex-shrink:0; margin-top:2px;" />
                     <label for="marketing-agree" class="kr" style="color:#444429; font-size:14px; cursor:pointer; line-height:1.6; word-break:keep-all;">(선택) 이메일, 문자(SMS), 전화 또는 기타 전자적 수단을 통해 디에르의 제품, 서비스, 전시·행사, 프로모션 및 각종 소식을 수신하는 데 동의합니다.</label>
@@ -1998,7 +1998,7 @@ a {
                 </div>
 
                 <!-- Submit -->
-                <button type="submit" style="background:#383629; color:#c8c9bc; border:none; border-radius:9999px; display:flex; align-items:center; justify-content:center; height:48px; width:160px; margin-top:80px; cursor:pointer; transition:background 0.3s;" onmouseover="this.style.background='#000'" onmouseout="this.style.background='#383629'">
+                <button type="submit" style="background:#383629; color:#c8c9bc; border:none; border-radius:9999px; display:flex; align-items:center; justify-content:center; height: 2.5vw; width: 8.33vw; margin-top: 4.17vw; cursor:pointer; transition:background 0.3s;" onmouseover="this.style.background='#000'" onmouseout="this.style.background='#383629'">
                   <span class="en" style="font-size:17px; letter-spacing:0.05em; padding-top:2px;">Reservation</span>
                 </button>
               </form>
@@ -2006,7 +2006,7 @@ a {
 
             <!-- Address Info (inside glass card) -->
             <div class="res-address">
-              <p class="en" style="font-size: 24px; margin-bottom: 12px; color: #f7f7ec; letter-spacing: 0.05em;">DIHEIR Cheongdam</p>
+              <p class="en" style="font-size: 24px; margin-bottom: 0.63vw; color: #f7f7ec; letter-spacing: 0.05em;">DIHEIR Cheongdam</p>
               <div class="kr res-address-split">
                 <p>서울시 강남구 도산대로59길 16,<br />B1층 (청담동, 테이블2025)</p>
                 <p class="res-address-right">AM 10:30 - PM 07:30 / 월·명절 연휴 휴무<br />Tel. 0507-1339-2520</p>
