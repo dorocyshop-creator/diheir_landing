@@ -860,11 +860,11 @@ a {
   text-align: right;
 }
 
-/* Full parent width so no card is clipped by an offset origin. */
 .rail {
   position: absolute;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   top: 30.984rem;
   overflow: hidden;
 }
