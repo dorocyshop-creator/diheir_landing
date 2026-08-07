@@ -1472,10 +1472,20 @@ a {
   .cf-xs, .cf-sm {
     display: none;
   }
+  .cf {
+    overflow: visible;
+  }
   .cf-hero {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
+    overflow: visible;
+  }
+  .cf-hero img {
+    border-radius: 4px;
+  }
+  .vignette {
+    display: none;
   }
   .craft-text {
     position: relative;
@@ -1484,6 +1494,7 @@ a {
     translate: none;
     padding-top: 8vw;
     gap: 4vw;
+    width: 100%;
   }
   .craft-headline {
     font-size: clamp(18px, 5.5vw, 28px);
