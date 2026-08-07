@@ -1467,6 +1467,9 @@ a {
   .rail-bar {
     height: 2px;
   }
+  .rail-bar-fill {
+    width: 11.1111%;
+  }
 }
 
 /* =========================================================
@@ -2360,11 +2363,12 @@ if (rail) {
 
   /* Contiguous runs of one collection, numbered across the whole track, so a
      click centres exactly the run it landed in rather than every copy of it. */
+  const isMobile = window.innerWidth <= 768;
   let run = -1;
   let prev = null;
   track.innerHTML = Array.from({ length: COPIES }, (_, copy) =>
     UNIT.map((c, i) => {
-      if (c.label !== prev) run += 1;
+      if (isMobile || c.label !== prev) run += 1;
       prev = c.label;
       return card(c, i, run, copy !== REAL);
     }).join(""),
@@ -2380,7 +2384,7 @@ if (rail) {
     const members = cards.filter((c) => c.dataset.run === id);
     return { first: cards.indexOf(members[0]), last: cards.indexOf(members[members.length - 1]) };
   });
-  const SECTIONS = 4; // LOV · Heirbound · CONCORE · SPIRAL
+  const SECTIONS = isMobile ? 9 : 4; // Mobile: 9 cards, PC: 4 collections (LOV · Heirbound · CONCORE · SPIRAL)
   const runsPerLap = SECTIONS;
 
   let offset = 0;
@@ -2432,7 +2436,7 @@ if (rail) {
     while (next >= lo + w) { next -= w; shifts -= 1; }
     if (next === offset) return;
     offset = next;
-    runAt += shifts * 8;
+    runAt += shifts * (SECTIONS * 2);
     barPos += shifts * 2;
     track.classList.add("is-instant");
     paintTrack();
