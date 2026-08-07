@@ -116,6 +116,9 @@ a {
   margin-inline: auto;
   height: 100%;
 }
+.mo-br {
+  display: none;
+}
 
 /* ===================== 01 Hero ===================== */
 .sec-hero {
@@ -1373,11 +1376,14 @@ a {
     text-align: center;
     line-height: 1.6;
     width: 90%;
-    max-width: 320px;
+    /* max-width: 320px; */
     word-break: keep-all;
   }
   .custom-copy p:not(:last-child) {
     margin-bottom: 1em;
+  }
+  .mo-br {
+    display: inline;
   }
 }
 
@@ -1543,7 +1549,7 @@ a {
 
         <div class="custom-copy kr">
           <p>커스터마이징 형식으로 제작되는 ‘우리’만의 스타일.<br />아름답게 피어난 꽃, 부드러운 곡선의 줄기,</p>
-          <p>섬세한 잎과 결, 고귀한 자연의 아름다움을 담은 우아한 디자인을 선보입니다.</p>
+          <p>섬세한 잎과 결, 고귀한 자연의 아름다움을 <br class="mo-br" />담은 우아한 디자인을 선보입니다.</p>
         </div>
       </div>
     </section>
