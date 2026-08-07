@@ -1432,6 +1432,71 @@ a {
     display: inline;
   }
 
+  /* --- Craftsmanship Mobile --- */
+  .sec-craft {
+    height: auto !important;
+  }
+  .craft-grad {
+    position: relative;
+    top: 0;
+    height: auto;
+    background: linear-gradient(180deg, var(--moss) 0%, var(--ink) 50%);
+  }
+  .craft-inner {
+    position: relative;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8vw 6vw 12vw;
+  }
+  .craft-display {
+    position: relative;
+    top: auto;
+    left: auto;
+    translate: none;
+    font-size: clamp(32px, 10vw, 60px);
+    margin-bottom: 4vw;
+  }
+  .craft-row {
+    position: relative;
+    top: auto;
+    left: auto;
+    translate: none;
+    width: 85%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .cf-xs, .cf-sm {
+    display: none;
+  }
+  .cf-hero {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .craft-text {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    translate: none;
+    padding-top: 8vw;
+    gap: 4vw;
+  }
+  .craft-headline {
+    font-size: clamp(18px, 5.5vw, 28px);
+    white-space: normal;
+    word-break: keep-all;
+  }
+  .craft-copy {
+    font-size: clamp(12px, 3.5vw, 16px);
+    white-space: normal;
+    word-break: keep-all;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
   /* --- Collection (2.5x Scale) --- */
   .sec-collection {
     height: 105vw;
