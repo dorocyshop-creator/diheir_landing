@@ -1007,8 +1007,6 @@ a {
   .intro-top-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     width: 100%;
   }
   .intro-bottom-group {
@@ -1029,9 +1027,10 @@ a {
   .intro-olive {
     display: block;
     position: absolute;
-    bottom: -4rem;
-    left: -4rem;
-    width: 120%;
+    bottom: -2rem;
+    left: -2rem;
+    width: 80%;
+    max-width: 400px;
     height: auto;
     z-index: 0;
     pointer-events: none;
@@ -1061,16 +1060,23 @@ a {
   }
   .intro-display.d1 {
     padding-right: 0;
+    align-self: flex-start;
+    margin-left: 15%;
     transform: none;
   }
   .intro-display.d2 {
     margin-top: 0;
+    align-self: flex-end;
+    margin-right: 5%;
     transform: none;
   }
   .intro-headline {
     font-size: clamp(2.6rem, 4.4vw, 4rem);
     white-space: normal;
-    margin-block: 2rem;
+    margin-block: 1rem;
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 5%;
   }
   .intro-copy {
     text-align: left;
