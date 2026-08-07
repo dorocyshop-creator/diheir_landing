@@ -50,7 +50,7 @@
 
 html {
   /* 16px at 1920, scales proportionally down */
-  font-size: 0.83333vw;
+  font-size: min(0.83333vw, 16px);
   scroll-behavior: smooth;
   background: var(--ink);
 }
@@ -122,7 +122,7 @@ a {
 
 /* ===================== 01 Hero ===================== */
 .sec-hero {
-  height: 56.25vw;
+  height: 67.5rem;
   background: #12120d;
 }
 .hero-video {
@@ -135,8 +135,8 @@ a {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 100vw;
-  height: 56.25vw;
+  width: 120rem;
+  height: 67.5rem;
   min-height: 100%;
   min-width: 177.78vh;
   border: 0;
@@ -217,31 +217,31 @@ a {
 }
 .hero-title {
   position: absolute;
-  left: 2.55vw;
-  top: 43.7vw;
-  font-size: 10.41vw;
+  left: 3.06rem;
+  top: 52.44rem;
+  font-size: 12.492rem;
   line-height: 1;
   white-space: nowrap;
   color: #fff;
 }
 .hero-title .c {
-  font-size: 11.97vw;
+  font-size: 14.364rem;
 }
 .hero-tag {
   position: absolute;
-  left: 71.87vw;
-  top: 40vw;
-  font-size: max(var(--min-text), 2.08vw);
+  left: 86.244rem;
+  top: 48rem;
+  font-size: max(var(--min-text), 2.496rem);
   line-height: 1;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.8);
 }
 .hero-logo {
   position: absolute;
-  left: 67.65vw;
-  top: 43.64vw;
-  width: 29.21vw;
-  height: 9.06vw;
+  left: 81.18rem;
+  top: 52.368rem;
+  width: 35.052rem;
+  height: 10.872rem;
 }
 /* Intrinsic ratio lives on the svg: once the wrapper goes height:auto below
    1280, height:100% would fall back to the 150px replaced-element default. */
@@ -474,7 +474,7 @@ a {
 }
 @media (min-width: 1024px) {
   .benefits-inner {
-    width: 100vw;
+    width: 120rem;
     max-width: 131.506vh;
     aspect-ratio: 1920 / 1460;
     container-type: inline-size;
@@ -629,14 +629,14 @@ a {
 
 /* ===================== 05 Custom Jewelry ===================== */
 .sec-custom {
-  height: 92.97vw;
+  height: 111.564rem;
 }
 .custom-display {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 10.42vw;
-  font-size: 11.46vw;
+  top: 12.504rem;
+  font-size: 13.752rem;
   line-height: 1.3;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -647,19 +647,19 @@ a {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 19.79vw;
-  width: 100vw;
+  top: 23.748rem;
+  width: 120rem;
   max-width: none;
-  height: 79.95vw;
+  height: 95.94rem;
   background: var(--moss);
-  border-radius: 50vw 50vw 0 0;
+  border-radius: 60rem 60rem 0 0;
 }
 .custom-sub {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 30.63vw;
-  font-size: 7.29vw;
+  top: 36.756rem;
+  font-size: 8.748rem;
   line-height: 1.3;
   letter-spacing: -0.02em;
   white-space: nowrap;
@@ -669,9 +669,9 @@ a {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 37.19vw;
-  width: 45.21vw;
-  height: 25.42vw;
+  top: 44.628rem;
+  width: 54.252rem;
+  height: 30.504rem;
   overflow: hidden;
   mix-blend-mode: screen;
   -webkit-mix-blend-mode: screen;
@@ -689,8 +689,8 @@ a {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 67.92vw;
-  font-size: 4.17vw;
+  top: 81.504rem;
+  font-size: 5.004rem;
   font-weight: 200;
   line-height: 1.3;
   letter-spacing: -0.02em;
@@ -702,10 +702,10 @@ a {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 82.92vw;
+  top: 99.504rem;
   display: grid;
-  gap: 0.21vw;
-  font-size: max(var(--min-text), 1.04vw);
+  gap: 0.252rem;
+  font-size: max(var(--min-text), 1.248rem);
   font-weight: 200;
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -716,22 +716,22 @@ a {
 
 /* ===================== 06 Craftsmanship ===================== */
 .sec-craft {
-  height: 57.66vw;
+  height: 69.192rem;
 }
 .craft-grad {
   position: absolute;
   left: 0;
   right: 0;
-  top: -0.57vw;
-  height: 42.66vw;
+  top: -0.684rem;
+  height: 51.192rem;
   background: linear-gradient(180deg, var(--moss) 4.464%, var(--ink) 100%);
 }
 .craft-display {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 6.56vw;
-  font-size: 11.46vw;
+  top: 7.872rem;
+  font-size: 13.752rem;
   line-height: 1.3;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -742,12 +742,12 @@ a {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 16.5vw;
-  width: 42.71vw; /* 820px */
-  height: 29.59vw; /* 568.1px */
+  top: 19.8rem;
+  width: 51.252rem; /* 820px */
+  height: 35.508rem; /* 568.1px */
   display: flex;
   align-items: center;
-  gap: 2.08vw;
+  gap: 2.496rem;
 }
 .cf {
   position: relative;
@@ -761,13 +761,13 @@ a {
   object-fit: fill;
 }
 .cf-xs {
-  flex: 0 0 9.22vw;
-  height: 15.63vw;
+  flex: 0 0 11.064rem;
+  height: 18.756rem;
   opacity: 0.4;
 }
 .cf-sm {
-  flex: 0 0 9.27vw;
-  height: 23.13vw;
+  flex: 0 0 11.124rem;
+  height: 27.756rem;
   opacity: 0.4;
 }
 .cf-hero {
@@ -793,18 +793,18 @@ a {
 }
 .craft-text {
   position: absolute;
-  bottom: 2.08vw;
+  bottom: 2.496rem;
   left: 50%;
   translate: -50% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.04vw;
+  gap: 1.248rem;
   width: 100%;
   z-index: 2;
 }
 .craft-headline {
-  font-size: max(var(--min-text), 1.67vw);
+  font-size: max(var(--min-text), 2.004rem);
   font-weight: 200;
   line-height: 1.3;
   letter-spacing: -0.02em;
@@ -812,7 +812,7 @@ a {
   white-space: nowrap;
 }
 .craft-copy {
-  font-size: max(var(--min-text), 0.73vw);
+  font-size: max(var(--min-text), 0.876rem);
   font-weight: 200;
   line-height: 1.3;
   letter-spacing: -0.02em;
@@ -823,21 +823,21 @@ a {
 
 /* ===================== 07 Collection ===================== */
 .sec-collection {
-  height: 65vw;
+  height: 78rem;
 }
 .col-display {
-  font-size: 13.2vw;
+  font-size: 15.84rem;
   line-height: 1;
   white-space: nowrap;
   color: var(--ghost);
 }
 .col-head {
   position: absolute;
-  inset: 0 5.11vw auto 4.65vw;
+  inset: 0 6.132rem auto 5.58rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 7.28vw;
+  padding-top: 8.736rem;
 }
 /* The rule and "Art" sit at fixed plate coordinates, so they position
    against .col-head directly rather than stacking in flow. */
@@ -846,17 +846,17 @@ a {
 }
 .col-head-right .rule {
   position: absolute;
-  left: 73.85vw;
-  top: 11.19vw;
-  width: 25.93vw;
-  height: 0.23vw;
+  left: 88.62rem;
+  top: 13.428rem;
+  width: 31.116rem;
+  height: 0.276rem;
   background: var(--ghost);
 }
 .col-display-art {
   position: absolute;
   right: 0;
-  top: 13.66vw;
-  font-size: 17.22vw;
+  top: 16.392rem;
+  font-size: 20.664rem;
   text-align: right;
 }
 
@@ -865,13 +865,13 @@ a {
   position: absolute;
   left: 0;
   right: 0;
-  top: 25.82vw;
+  top: 30.984rem;
   overflow: hidden;
 }
 .rail-track {
   display: flex;
   align-items: flex-start;
-  gap: 1.38vw;
+  gap: 1.656rem;
   width: max-content;
   transition: transform 0.7s cubic-bezier(0.4, 0, 0.15, 1);
 }
@@ -881,9 +881,9 @@ a {
 .col-card {
   position: relative;
   cursor: pointer;
-  flex: 0 0 20.66vw;
-  height: 20.66vw;
-  padding: 1.15vw;
+  flex: 0 0 24.792rem;
+  height: 24.792rem;
+  padding: 1.38rem;
   background: #3a3a3a;
   overflow: hidden;
   display: flex;
@@ -891,7 +891,7 @@ a {
   justify-content: space-between;
 }
 .col-card.is-low {
-  margin-top: 6.89vw;
+  margin-top: 8.268rem;
 }
 .col-card > img {
   position: absolute;
@@ -920,7 +920,7 @@ a {
   translate: -50% -50%;
 }
 .col-card .label {
-  font-size: max(var(--min-text), 1.15vw);
+  font-size: max(var(--min-text), 1.38rem);
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: -0.02em;
@@ -930,14 +930,14 @@ a {
   content: "";
   position: absolute;
   left: -0.5rem;
-  top: -0.3vw;
-  width: 21.37vw;
-  height: 1.84vw;
+  top: -0.36rem;
+  width: 25.644rem;
+  height: 2.208rem;
   z-index: -1;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 41.876%, rgba(0, 0, 0, 0) 55.341%);
 }
 .col-card .name {
-  font-size: max(var(--min-text), 1.38vw);
+  font-size: max(var(--min-text), 1.656rem);
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.02em;
@@ -949,16 +949,16 @@ a {
   position: absolute;
   left: 50%;
   translate: -50% 0;
-  top: 60.13vw;
-  width: 53.08vw;
+  top: 72.156rem;
+  width: 63.696rem;
   display: flex;
   align-items: center;
-  gap: 1.38vw;
+  gap: 1.656rem;
 }
 .rail-bar {
   position: relative;
   flex: 1 1 auto;
-  height: 0.11vw;
+  height: 0.132rem;
   background: rgba(189, 190, 167, 0.3);
   overflow: hidden;
 }
@@ -977,7 +977,7 @@ a {
    ========================================================= */
 @media (max-width: 1038px) {
   html {
-    font-size: 0.96339vw;
+    font-size: 1.1561rem;
   }
 
 
@@ -1063,7 +1063,7 @@ a {
     z-index: 1;
   }
   .intro-display {
-    font-size: clamp(6.4rem, 10vw, 12rem);
+    font-size: clamp(6.4rem, 12rem, 12rem);
   }
   .intro-display.d1 {
     padding-right: 0;
@@ -1078,7 +1078,7 @@ a {
     transform: none;
   }
   .intro-headline {
-    font-size: clamp(2.6rem, 4.4vw, 4rem);
+    font-size: clamp(2.6rem, 5.28rem, 4rem);
     white-space: normal;
     margin-block: 1rem;
     align-self: flex-start;
@@ -1113,7 +1113,7 @@ a {
   }
   .diff-display {
     position: static;
-    font-size: clamp(4rem, min(14vw, 12vh), 15rem);
+    font-size: clamp(4rem, min(16.8rem, 12vh), 15rem);
     line-height: 1;
   }
   .diff-display.d2 {
@@ -1145,10 +1145,10 @@ a {
     inset: auto 0 4vh;
   }
   .diff-card-title {
-    font-size: clamp(2rem, min(6vw, 4vh), 4rem);
+    font-size: clamp(2rem, min(7.2rem, 4vh), 4rem);
   }
   .diff-card-desc {
-    font-size: clamp(1.2rem, min(3vw, 2vh), 2rem);
+    font-size: clamp(1.2rem, min(3.6rem, 2vh), 2rem);
   }
   .carousel-nav {
     position: absolute;
@@ -1192,7 +1192,7 @@ a {
     margin-top: 2rem;
   }
   .ben-display {
-    font-size: clamp(5.4rem, 13vw, 14rem);
+    font-size: clamp(5.4rem, 15.6rem, 14rem);
   }
   .ben-note {
     font-size: max(var(--min-text), 1.6rem);
@@ -1232,33 +1232,33 @@ a {
     padding: 2.4rem;
   }
   .ben-num {
-    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-size: clamp(2rem, 4.8rem, 3.2rem);
   }
   .ben-label {
-    font-size: clamp(1.6rem, 3.5vw, 2.4rem) !important;
+    font-size: clamp(1.6rem, 4.2rem, 2.4rem) !important;
     opacity: 1 !important;
   }
   .ben-detail {
     display: block !important;
     opacity: 1 !important;
     align-self: center;
-    font-size: max(var(--min-text), clamp(1.2rem, 2.5vw, 1.6rem));
+    font-size: max(var(--min-text), clamp(1.2rem, 3rem, 1.6rem));
     white-space: normal;
   }
 
-  /* --- Craftsmanship Tablet Zoom (80vw row) --- */
-  .sec-craft { height: 108vw; }
-  .craft-grad { top: -1.07vw; height: 79.9vw; }
+  /* --- Craftsmanship Tablet Zoom (96rem row) --- */
+  .sec-craft { height: 129.6rem; }
+  .craft-grad { top: -1.284rem; height: 95.88rem; }
   .craft-display {
-    top: 20vw;
-    font-size: 13vw;
+    top: 24rem;
+    font-size: 15.6rem;
   }
-  .craft-row { top: 30.9vw; width: 80vw; height: 60vw; gap: 3.9vw; }
-  .cf-xs { flex: 0 0 17.27vw; height: 29.27vw; }
-  .cf-sm { flex: 0 0 17.36vw; height: 43.32vw; }
-  .craft-text { bottom: 3.9vw; gap: 1.95vw; }
-  .craft-headline { font-size: max(var(--min-text), 3.13vw); }
-  .craft-copy { font-size: max(var(--min-text), 1.37vw); }
+  .craft-row { top: 37.08rem; width: 96rem; height: 72rem; gap: 4.68rem; }
+  .cf-xs { flex: 0 0 20.724rem; height: 35.124rem; }
+  .cf-sm { flex: 0 0 20.832rem; height: 51.984rem; }
+  .craft-text { bottom: 4.68rem; gap: 2.34rem; }
+  .craft-headline { font-size: max(var(--min-text), 3.756rem); }
+  .craft-copy { font-size: max(var(--min-text), 1.644rem); }
 
   /* --- Collection Tablet Margin --- */
   .sec-collection {
@@ -1311,7 +1311,7 @@ a {
   .hero-title {
     grid-column: 1 / -1;
     grid-row: 1;
-    font-size: clamp(32px, 11vw, 64px);
+    font-size: clamp(32px, 13.2rem, 64px);
     line-height: 1;
   }
   .hero-title .c {
@@ -1320,7 +1320,7 @@ a {
   .hero-logo {
     grid-column: 1;
     grid-row: 2;
-    width: 55vw;
+    width: 66rem;
     max-width: 320px;
     height: auto;
   }
@@ -1328,7 +1328,7 @@ a {
     grid-column: 2;
     grid-row: 2;
     justify-self: end;
-    margin-bottom: 0vw;
+    margin-bottom: 0rem;
     font-size: 4rem;
     text-align: right;
   }
@@ -1343,15 +1343,15 @@ a {
     display: block !important;
     opacity: 1 !important;
     align-self: center;
-    font-size: max(var(--min-text), clamp(1.2rem, 3.5vw, 3.6rem));
+    font-size: max(var(--min-text), clamp(1.2rem, 4.2rem, 3.6rem));
     white-space: normal;
   }
   .ben-label {
-    font-size: clamp(1.6rem, 4vw, 5.4rem) !important;
+    font-size: clamp(1.6rem, 4.8rem, 5.4rem) !important;
     opacity: 1 !important;
   }
   .ben-num {
-    font-size: clamp(2rem, 6vw, 5.2rem);
+    font-size: clamp(2rem, 7.2rem, 5.2rem);
   }
   .ben-body {
     inset: 0;
@@ -1373,13 +1373,13 @@ a {
     align-items: center;
   }
   .custom-dome {
-    top: 12vw;
+    top: 14.4rem;
     bottom: -80px;
     height: auto;
     left: 50%;
     translate: -50% 0;
-    width: 100vw;
-    border-radius: 50vw 50vw 0 0;
+    width: 120rem;
+    border-radius: 60rem 60rem 0 0;
   }
   .custom-display,
   .custom-sub,
@@ -1393,32 +1393,32 @@ a {
     z-index: 2;
   }
   .custom-display {
-    font-size: 14vw;
+    font-size: 16.8rem;
     margin-bottom: 20px;
     text-align: center;
     z-index: 0;
   }
   .custom-sub {
-    font-size: clamp(24px, 7vw, 60px);
+    font-size: clamp(24px, 8.4rem, 60px);
     margin-bottom: 30px;
     text-align: center;
   }
   .custom-video {
-    width: 85vw;
+    width: 102rem;
     /* max-width: 360px; */
     height: auto;
     /* max-height: 202.5px; */
     margin-bottom: 30px;
   }
   .custom-quote {
-    font-size: clamp(18px, 5.5vw, 32px);
+    font-size: clamp(18px, 6.6rem, 32px);
     margin-bottom: 30px;
     text-align: center;
     white-space: normal;
     word-break: keep-all;
   }
   .custom-copy {
-    font-size: clamp(12px, 3.5vw, 15px);
+    font-size: clamp(12px, 4.2rem, 15px);
     text-align: center;
     line-height: 1.6;
     width: 90%;
@@ -1448,15 +1448,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8vw 6vw 12vw;
+    padding: 9.6rem 7.2rem 14.4rem;
   }
   .craft-display {
     position: relative;
     top: auto;
     left: auto;
     translate: none;
-    font-size: clamp(32px, 10vw, 60px);
-    margin-bottom: 4vw;
+    font-size: clamp(32px, 12rem, 60px);
+    margin-bottom: 4.8rem;
   }
   .craft-row {
     position: relative;
@@ -1497,17 +1497,17 @@ a {
     bottom: auto;
     left: auto;
     translate: none;
-    padding-top: 8vw;
-    gap: 4vw;
+    padding-top: 9.6rem;
+    gap: 4.8rem;
     width: 100%;
   }
   .craft-headline {
-    font-size: clamp(18px, 5.5vw, 28px);
+    font-size: clamp(18px, 6.6rem, 28px);
     white-space: normal;
     word-break: keep-all;
   }
   .craft-copy {
-    font-size: clamp(12px, 3.5vw, 16px);
+    font-size: clamp(12px, 4.2rem, 16px);
     white-space: normal;
     word-break: keep-all;
     color: rgba(255, 255, 255, 0.7);
@@ -1515,36 +1515,36 @@ a {
 
   /* --- Collection (2.5x Scale) --- */
   .sec-collection {
-    height: 105vw;
+    height: 126rem;
   }
   .rail-track {
-    gap: 3.125vw;
+    gap: 3.75rem;
   }
   .col-card {
-    flex: 0 0 46.875vw;
-    height: 46.875vw;
-    padding: 2.6vw;
+    flex: 0 0 56.25rem;
+    height: 56.25rem;
+    padding: 3.12rem;
   }
   .col-card.is-low {
-    margin-top: 15.625vw;
+    margin-top: 18.75rem;
   }
   .col-card .label {
-    font-size: max(var(--min-text), 2.6vw);
+    font-size: max(var(--min-text), 3.12rem);
   }
   .col-card .label::before {
     left: 0;
     top: -3px;
-    width: 41.675vw;
-    height: 4.175vw;
+    width: 50.01rem;
+    height: 5.01rem;
   }
   .col-card .name {
-    font-size: max(var(--min-text), 3.125vw);
+    font-size: max(var(--min-text), 3.75rem);
   }
   .rail-nav {
-    top: 92vw;
+    top: 110.4rem;
     width: 90%;
     max-width: 320px;
-    gap: 3.125vw;
+    gap: 3.75rem;
   }
   .rail-nav .arrow {
     width: 32px;
@@ -1569,7 +1569,7 @@ a {
   }
   .intro-display.d1,
   .intro-display.d2 {
-    font-size: clamp(6.4rem, 13vw, 14rem);
+    font-size: clamp(6.4rem, 15.6rem, 14rem);
   }
   .intro-bottom-group {
     flex-direction: column;
@@ -1837,7 +1837,7 @@ a {
     <style>
       .sec-reservation {
         background: #383629;
-        padding: 5.21vw 0;
+        padding: 6.252rem 0;
       }
       .res-container {
         position: relative;
@@ -1845,11 +1845,11 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 5.21vw;
+        padding-top: 6.252rem;
       }
       .res-bg-text {
         position: absolute;
-        top: -1.04vw;
+        top: -1.248rem;
         /* left: 0; */
         width: 90%;
         display: flex;
@@ -1858,21 +1858,21 @@ a {
         pointer-events: none;
       }
       .res-bg-text p {
-        font-size: clamp(120px, 22vw, 300px);
+        font-size: clamp(120px, 26.4rem, 300px);
         color: #9F9F8B;
         line-height: 1;
         opacity: 0.12;
         margin: 0;
-        letter-spacing: -0.31vw;
+        letter-spacing: -0.372rem;
         white-space: nowrap;
         text-transform: capitalize;
       }
       .res-image-wrapper {
         position: relative;
         width: 90%;
-        max-width: 72.92vw;
-        padding: 0 0.83vw;
-        margin-top: 6.25vw;
+        max-width: 87.504rem;
+        padding: 0 0.996rem;
+        margin-top: 7.5rem;
         z-index: 5;
         box-sizing: border-box;
       }
@@ -1884,24 +1884,24 @@ a {
       .res-glass-card {
         position: relative;
         width: 100%;
-        max-width: 56vw;
-        padding: 0 0.83vw;
+        max-width: 67.2rem;
+        padding: 0 0.996rem;
         z-index: 10;
         box-sizing: border-box;
-        margin-top: -31.25vw;
+        margin-top: -37.5rem;
       }
       .res-glass-inner {
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-radius: 1.67vw;
+        border-radius: 2.004rem;
         border: 1px solid rgba(255,255,255,0.2);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         background: rgba(170, 166, 128, 0.1);
-        padding: 2.86vw 3.02vw 3.13vw;
+        padding: 3.432rem 3.624rem 3.756rem;
         box-sizing: border-box;
-        box-shadow: 0 1.3vw 2.6vw -0.63vw rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1.56rem 3.12rem -0.756rem rgba(0, 0, 0, 0.25);
       }
       .res-form-section {
         background: #c8c9bc;
@@ -1909,8 +1909,8 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 5.21vw 4.17vw;
-        border-radius: 0.83vw;
+        padding: 6.252rem 5.004rem;
+        border-radius: 0.996rem;
         box-sizing: border-box;
       }
       .res-form-section form > div > div > p {
@@ -1920,13 +1920,13 @@ a {
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 3.65vw;
+        padding-top: 4.38rem;
         color: rgba(255,255,255,0.7);
       }
       .res-address-split {
         display: flex;
         justify-content: space-between;
-        gap: 1.67vw;
+        gap: 2.004rem;
         font-size: 13px;
         line-height: 1.6;
         letter-spacing: -0.02em;
@@ -1936,47 +1936,47 @@ a {
         text-align: right;
       }
       @media (max-width: 1440px) {
-        .res-image-wrapper { max-width: 85vw; }
-        .res-glass-card { max-width: 64vw; }
-        .res-bg-text { top: -3.04vw; }
-        .res-bg-text p { font-size: clamp(120px, 17vw, 300px); }
-        .res-form-section form > div > div > p { min-width: 8vw !important; }
+        .res-image-wrapper { max-width: 102rem; }
+        .res-glass-card { max-width: 76.8rem; }
+        .res-bg-text { top: -3.648rem; }
+        .res-bg-text p { font-size: clamp(120px, 20.4rem, 300px); }
+        .res-form-section form > div > div > p { min-width: 9.6rem !important; }
       }
       @media (max-width: 1038px) {
-        .sec-reservation { padding: 5.21vw 0 12vw; }
+        .sec-reservation { padding: 6.252rem 0 14.4rem; }
         .res-image-wrapper { opacity: 0; }
-        .res-bg-text { top: 3vw; }
-        .res-glass-card { max-width: 90%; margin-top: -41.25vw; }
-        .res-glass-inner { padding: 5.86vw 6vw 4.13vw; }
+        .res-bg-text { top: 3.6rem; }
+        .res-glass-card { max-width: 90%; margin-top: -49.5rem; }
+        .res-glass-inner { padding: 7.032rem 7.2rem 4.956rem; }
         .res-form-section form > div:nth-child(1) > div { display: contents !important; }
-        .res-form-section > p.en { font-size: clamp(32px, 5vw, 44px) !important; margin-bottom: 4.5vw !important; }
-        .res-form-section input:not([type="checkbox"]), .res-form-section select { padding-bottom: 1vw !important; }
+        .res-form-section > p.en { font-size: clamp(32px, 6rem, 44px) !important; margin-bottom: 5.4rem !important; }
+        .res-form-section input:not([type="checkbox"]), .res-form-section select { padding-bottom: 1.2rem !important; }
       }
       @media (max-width: 1024px) {
         .res-glass-card { /* margin-top: -550px; */ }
       }
       @media (max-width: 768px) {
-        .sec-reservation { padding: 10vw 0; }
+        .sec-reservation { padding: 12rem 0; }
         .res-container { padding-top: 60px; }
         .res-image-wrapper { margin-top: 80px; }
-        .res-glass-card { max-width: 96%; margin-top: -41.25vw; }
+        .res-glass-card { max-width: 96%; margin-top: -49.5rem; }
         .res-glass-inner {
-          padding: 6vw 4vw;
+          padding: 7.2rem 4.8rem;
           border-radius: 24px;
         }
         .res-form-section {
-          padding: 10vw 6vw;
+          padding: 12rem 7.2rem;
           border-radius: 12px;
           background: rgba(200, 201, 188, 0.8);
         }
-        .res-form-section form > div { gap: 2.5vw !important; }
-        .res-address { padding: 8vw 4vw; }
+        .res-form-section form > div { gap: 3rem !important; }
+        .res-address { padding: 9.6rem 4.8rem; }
         .res-address-split { flex-direction: column; gap: 8px; }
         .res-address-right { text-align: left; }
-        .res-bg-text p { font-size: clamp(80px, 16vw, 150px); }
+        .res-bg-text p { font-size: clamp(80px, 19.2rem, 150px); }
       }
       @media (max-width: 430px) {
-        .res-bg-text p { font-size: clamp(50px, 18vw, 100px); }
+        .res-bg-text p { font-size: clamp(50px, 21.6rem, 100px); }
       }
     </style>
     <section class="sec sec-reservation" id="reservation">
@@ -1998,28 +1998,28 @@ a {
             
             <!-- Form Section -->
             <div class="res-form-section">
-              <p class="en" style="font-size: clamp(32px, 6vw, 48px); color: #383629; text-align: center; margin-bottom: 2.6vw; line-height: 1;">Reserve Appointment</p>
+              <p class="en" style="font-size: clamp(32px, 7.2rem, 48px); color: #383629; text-align: center; margin-bottom: 3.12rem; line-height: 1;">Reserve Appointment</p>
               
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSdk6sZtR3D9WEqknpSOKANA-DxMfnszfjWW8VjwO4QopDwIOA/formResponse" method="POST" target="hidden_iframe" onsubmit="handleReservationSubmit(event)" style="display:flex; flex-direction:column; align-items:center; width:100%; gap: 2.08vw;">
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSdk6sZtR3D9WEqknpSOKANA-DxMfnszfjWW8VjwO4QopDwIOA/formResponse" method="POST" target="hidden_iframe" onsubmit="handleReservationSubmit(event)" style="display:flex; flex-direction:column; align-items:center; width:100%; gap: 2.496rem;">
                 
-                <div style="display:flex; flex-direction:column; gap: 1.56vw; width:100%;">
+                <div style="display:flex; flex-direction:column; gap: 1.872rem; width:100%;">
                   <!-- Name -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">이름</p>
-                    <input required type="text" name="entry.1054060175" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">이름</p>
+                    <input required type="text" name="entry.1054060175" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                   <!-- Phone -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">연락처</p>
-                    <input required type="tel" name="entry.2074802535" placeholder="입력해주세요." maxlength="13" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">연락처</p>
+                    <input required type="tel" name="entry.2074802535" placeholder="입력해주세요." maxlength="13" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                   <!-- Visit Date -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">방문일시</p>
-                    <div style="display:flex; align-items:flex-end; gap: 0.63vw; width:100%;">
-                      <input required type="date" name="entry.626727524" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer;" />
-                      <select id="time-picker" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:130px; flex-shrink:0; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">방문일시</p>
+                    <div style="display:flex; align-items:flex-end; gap: 0.756rem; width:100%;">
+                      <input required type="date" name="entry.626727524" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr); cursor:pointer;" />
+                      <select id="time-picker" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:130px; flex-shrink:0; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                         <option value="" disabled selected>시간 선택</option>
                         <option value="10:30">오전 10:30</option>
                         <option value="11:00">오전 11:00</option>
@@ -2045,13 +2045,13 @@ a {
                   </div>
                   <!-- Email -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">이메일</p>
-                    <input required type="email" name="entry.134182212" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">이메일</p>
+                    <input required type="email" name="entry.134182212" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                   <!-- Source -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">유입 경로</p>
-                    <select required name="entry.146229832" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">유입 경로</p>
+                    <select required name="entry.146229832" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                       <option value="" disabled selected>선택해주세요.</option>
                       <option value="인스타그램">인스타그램</option>
                       <option value="네이버 검색">네이버 검색</option>
@@ -2062,8 +2062,8 @@ a {
                   </div>
                   <!-- Interest -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">관심분야</p>
-                    <select required name="entry.1755025064" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">관심분야</p>
+                    <select required name="entry.1755025064" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                       <option value="" disabled selected>선택해주세요.</option>
                       <option value="반지·프로포즈">반지·프로포즈</option>
                       <option value="목걸이">목걸이</option>
@@ -2075,8 +2075,8 @@ a {
                   </div>
                   <!-- Budget -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">예산 범위</p>
-                    <select required name="entry.339840614" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">예산 범위</p>
+                    <select required name="entry.339840614" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                       <option value="" disabled selected>선택해주세요.</option>
                       <option value="50만원 미만">50만원 미만</option>
                       <option value="50 ~ 100만원">50 ~ 100만원</option>
@@ -2088,18 +2088,18 @@ a {
                   </div>
                   <!-- Request -->
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
-                    <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">요청사항</p>
-                    <input type="text" name="entry.399277218" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr);" />
+                    <p class="kr" style="color:#444429; font-size:16px; min-width: 5.628rem; margin-bottom: 0.504rem;">요청사항</p>
+                    <input type="text" name="entry.399277218" placeholder="입력해주세요." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.504rem; font-size:16px; font-family:var(--font-kr);" />
                   </div>
                 </div>
 
                 <!-- Checkboxes -->
-                <div style="display:flex; flex-direction:column; gap: 0.83vw; width:100%; margin-top: 0.52vw;">
-                  <div style="display:flex; align-items:center; gap: 0.63vw;">
+                <div style="display:flex; flex-direction:column; gap: 0.996rem; width:100%; margin-top: 0.624rem;">
+                  <div style="display:flex; align-items:center; gap: 0.756rem;">
                     <input id="privacy-agree" required type="checkbox" name="entry.831169210" value="네" style="flex-shrink:0;" />
                     <label for="privacy-agree" class="kr" style="color:#444429; font-size:14px; cursor:pointer;">개인정보 처리방침에 동의</label>
                   </div>
-                  <div style="display:flex; align-items:flex-start; gap: 0.63vw;">
+                  <div style="display:flex; align-items:flex-start; gap: 0.756rem;">
                     <input type="hidden" name="entry.430492874" id="marketing-hidden" value="아니오" />
                     <input id="marketing-agree" type="checkbox" onchange="document.getElementById('marketing-hidden').value = this.checked ? '네' : '아니오';" style="flex-shrink:0; margin-top:2px;" />
                     <label for="marketing-agree" class="kr" style="color:#444429; font-size:14px; cursor:pointer; line-height:1.6; word-break:keep-all;">(선택) 이메일, 문자(SMS), 전화 또는 기타 전자적 수단을 통해 디에르의 제품, 서비스, 전시·행사, 프로모션 및 각종 소식을 수신하는 데 동의합니다.</label>
@@ -2115,7 +2115,7 @@ a {
 
             <!-- Address Info (inside glass card) -->
             <div class="res-address">
-              <p class="en" style="font-size: 24px; margin-bottom: 0.63vw; color: #f7f7ec; letter-spacing: 0.05em;">DIHEIR Cheongdam</p>
+              <p class="en" style="font-size: 24px; margin-bottom: 0.756rem; color: #f7f7ec; letter-spacing: 0.05em;">DIHEIR Cheongdam</p>
               <div class="kr res-address-split">
                 <p>서울시 강남구 도산대로59길 16,<br />B1층 (청담동, 테이블2025)</p>
                 <p class="res-address-right">AM 10:30 - PM 07:30 / 월·명절 연휴 휴무<br />Tel. 0507-1339-2520</p>
