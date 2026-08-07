@@ -1894,6 +1894,10 @@ a {
         .res-address { padding: 8vw 4vw; }
         .res-address-split { flex-direction: column; gap: 8px; }
         .res-address-right { text-align: left; }
+        .res-bg-text p { font-size: clamp(80px, 16vw, 150px); }
+      }
+      @media (max-width: 430px) {
+        .res-bg-text p { font-size: clamp(50px, 18vw, 100px); }
       }
     </style>
     <section class="sec sec-reservation" id="reservation">
