@@ -1478,10 +1478,14 @@ a {
   .cf-hero {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
     overflow: visible;
   }
-  .cf-hero img {
+  .cf-hero > img {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 4px;
   }
   .vignette {
