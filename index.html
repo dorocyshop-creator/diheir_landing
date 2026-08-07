@@ -1311,6 +1311,67 @@ a {
     width: 100%;
     /* margin-left: -4rem; */
   }
+  /* --- Custom Jewelry --- */
+  .sec-custom {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .custom-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .custom-dome {
+    top: 40px;
+    bottom: -100px;
+    height: auto;
+    left: 50%;
+    translate: -50% 0;
+    width: 100vw;
+    border-radius: 50vw 50vw 0 0;
+  }
+  .custom-display,
+  .custom-sub,
+  .custom-video,
+  .custom-quote,
+  .custom-copy {
+    position: relative;
+    translate: none;
+    left: auto;
+    top: auto;
+  }
+  .custom-display {
+    font-size: clamp(48px, 14vw, 120px);
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .custom-sub {
+    font-size: clamp(28px, 8vw, 60px);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .custom-video {
+    width: 70vw;
+    max-width: 400px;
+    height: 70vw;
+    max-height: 400px;
+    margin-bottom: 40px;
+  }
+  .custom-quote {
+    font-size: clamp(20px, 6vw, 40px);
+    margin-bottom: 32px;
+    text-align: center;
+    white-space: normal;
+  }
+  .custom-copy {
+    font-size: clamp(12px, 3.5vw, 15px);
+    text-align: center;
+    line-height: 1.6;
+  }
+  .custom-copy p:not(:last-child) {
+    margin-bottom: 1em;
+  }
 }
 
 /* =========================================================
