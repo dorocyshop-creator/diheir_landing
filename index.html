@@ -211,6 +211,58 @@ a {
   height: 100%;
 }
 
+.burger-wrapper {
+  position: relative;
+}
+.gnb-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+.gnb-dropdown::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  padding: 1px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.8) 40%, #fff 60%, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.burger-wrapper:hover .gnb-dropdown,
+.burger-wrapper:focus-within .gnb-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.gnb-dropdown a {
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.gnb-dropdown a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* No scrim behind the wordmark — the video reads clean, per the design. */
 .hero-inner {
   z-index: 2;
@@ -1644,7 +1696,15 @@ a {
       <header class="gnb">
         <div class="inner gnb-inner">
           <a class="pill en" href="#reservation">Reservation</a>
-          <button class="burger" type="button" aria-label="메뉴 열기" data-icon="burger"></button>
+          <div class="burger-wrapper">
+            <button class="burger" type="button" aria-label="메뉴 열기" data-icon="burger"></button>
+            <nav class="gnb-dropdown en">
+              <a href="#intro">Brand</a>
+              <a href="#benefits">Benefits</a>
+              <a href="#custom">Custom</a>
+              <a href="#reservation">Reservation</a>
+            </nav>
+          </div>
         </div>
       </header>
 
@@ -1656,7 +1716,7 @@ a {
     </section>
 
     <!-- ==================== 02_Section_Intro ==================== -->
-    <section class="sec sec-intro">
+    <section class="sec sec-intro" id="intro">
       <div class="inner intro-inner">
         <div class="intro-top-group">
           <p class="intro-display en d1">Timeless</p>
@@ -1710,7 +1770,7 @@ a {
     </section>
 
     <!-- ==================== 04_Section_Secret_Benefits ==================== -->
-    <section class="sec sec-benefits">
+    <section class="sec sec-benefits" id="benefits">
       <div class="inner benefits-inner">
         <p class="ben-display en d1">Secret</p>
         <p class="ben-display en d2">Benefits</p>
@@ -1724,7 +1784,7 @@ a {
     </section>
 
     <!-- ==================== 05_Section_Custom_Jewelry ==================== -->
-    <section class="sec sec-custom">
+    <section class="sec sec-custom" id="custom">
       <div class="inner custom-inner">
         <p class="custom-display en">CUSTOMIZING</p>
         <div class="custom-dome" aria-hidden="true"></div>
