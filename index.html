@@ -2867,6 +2867,39 @@ if (rail) {
   reset();
 }
 
+/* ---- 08 Reservation form validation ---- */
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Phone number auto-dash formatting
+  const phoneInput = document.querySelector('input[name="entry.2074802535"]');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function() {
+      let val = this.value.replace(/[^0-9]/g, '');
+      if (val.length > 3 && val.length <= 7) {
+        val = val.slice(0,3) + '-' + val.slice(3);
+      } else if (val.length > 7) {
+        val = val.slice(0,3) + '-' + val.slice(3,7) + '-' + val.slice(7,11);
+      }
+      this.value = val;
+    });
+  }
+
+  // 2. Prevent past dates in date picker
+  const dateInput = document.querySelector('input[name="entry.626727524"]');
+  if (dateInput) {
+    // Calculate local date correctly (KST)
+    const now = new Date();
+    const tzOffset = now.getTimezoneOffset() * 60000;
+    const localISOTime = (new Date(now - tzOffset)).toISOString().split('T')[0];
+    dateInput.min = localISOTime;
+  }
+
+  // 3. Require @ in email input
+  const emailInput = document.querySelector('input[name="entry.134182212"]');
+  if (emailInput) {
+    emailInput.pattern = ".+@.+";
+    emailInput.title = "이메일 주소 형식(@ 포함)으로 입력해주세요.";
+  }
+});
 
 /* ---- 08 Reservation form handler ---- */
 function handleReservationSubmit(e) {
