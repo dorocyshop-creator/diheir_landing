@@ -2057,6 +2057,21 @@ a {
       @media (max-width: 430px) {
         .res-bg-text p { font-size: clamp(50px, 18vw, 100px); }
       }
+
+      /* Form Placeholders */
+      .res-form-section input::placeholder {
+        color: rgba(68, 68, 41, 0.6) !important;
+        opacity: 1;
+      }
+      .res-form-section select:invalid {
+        color: rgba(68, 68, 41, 0.6) !important;
+      }
+      .res-form-section select option {
+        color: #444429;
+      }
+      .res-form-section input[type="date"]:invalid::-webkit-datetime-edit {
+        color: rgba(68, 68, 41, 0.6) !important;
+      }
     </style>
     <section class="sec sec-reservation" id="reservation">
       <div class="res-container">
