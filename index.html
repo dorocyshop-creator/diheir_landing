@@ -2726,18 +2726,82 @@ if (rail) {
     interactionTimer = setTimeout(() => { isInteracting = false; }, 3000);
   };
 
+  let startX = 0;
+  let startOffset = 0;
+  let isDragging = false;
+  let dragMoved = false;
+
+  rail.style.touchAction = "pan-y";
+  rail.style.cursor = "grab";
+
+  const dragStart = (e) => {
+    isInteracting = true;
+    clearTimeout(interactionTimer);
+    isDragging = true;
+    dragMoved = false;
+    startX = e.type.includes("mouse") ? e.pageX : e.touches[0].pageX;
+    startOffset = offset;
+    track.classList.add("is-instant");
+    rail.style.cursor = "grabbing";
+  };
+
+  const dragMove = (e) => {
+    if (!isDragging) return;
+    const x = e.type.includes("mouse") ? e.pageX : e.touches[0].pageX;
+    const diff = startX - x;
+    if (Math.abs(diff) > 5) dragMoved = true;
+    offset = startOffset + diff;
+    paintTrack();
+  };
+
+  const dragEnd = () => {
+    if (!isDragging) return;
+    isDragging = false;
+    track.classList.remove("is-instant");
+    rail.style.cursor = "grab";
+    interact();
+
+    const centerPos = offset + rail.clientWidth / 2;
+    let nearestRun = runAt;
+    for (let i = 0; i < runs.length; i++) {
+      const r = runs[i];
+      const left = r.first * step();
+      const right = (r.last + 1) * step() - gap();
+      if (centerPos >= left && centerPos <= right) {
+        nearestRun = i;
+        break;
+      }
+    }
+    goToRun(nearestRun);
+  };
+
+  rail.addEventListener("mousedown", dragStart);
+  window.addEventListener("mousemove", dragMove);
+  window.addEventListener("mouseup", dragEnd);
+  
+  rail.addEventListener("touchstart", dragStart, { passive: true });
+  window.addEventListener("touchmove", dragMove, { passive: true });
+  window.addEventListener("touchend", dragEnd);
+
+  // Still pause on hover for desktop
   rail.addEventListener("mouseenter", () => { isInteracting = true; clearTimeout(interactionTimer); });
-  rail.addEventListener("mouseleave", interact);
-  rail.addEventListener("touchstart", () => { isInteracting = true; clearTimeout(interactionTimer); }, { passive: true });
-  rail.addEventListener("touchend", interact);
+  rail.addEventListener("mouseleave", () => { if (!isDragging) interact(); });
 
   cards.forEach((el) => {
-    const go = () => { interact(); goToRun(Number(el.dataset.run)); };
+    const go = (e) => { 
+      if (dragMoved) {
+        e?.preventDefault();
+        e?.stopPropagation();
+        return;
+      }
+      interact(); 
+      goToRun(Number(el.dataset.run)); 
+    };
     el.addEventListener("click", go);
     el.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        go();
+        go(e);
       }
     });
   });
@@ -2759,7 +2823,7 @@ if (rail) {
   const loop = (now) => {
     const dt = Math.min(now - lastTime, 50); // cap delta to 50ms
     lastTime = now;
-    if (!isInteracting) {
+    if (!isInteracting && window.innerWidth > 768) {
       offset += 0.04 * dt; // approx 40px per second auto scroll
       const w = setWidth();
       if (w) {
