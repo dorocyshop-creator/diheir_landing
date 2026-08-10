@@ -1369,7 +1369,7 @@ a {
   .hero-title {
     grid-column: 1 / -1;
     grid-row: 1;
-    font-size: clamp(32px, 11vw, 64px);
+    font-size: clamp(32px, 7vw, 58px);
     line-height: 1;
   }
   .hero-title .c {
@@ -1378,7 +1378,7 @@ a {
   .hero-logo {
     grid-column: 1;
     grid-row: 2;
-    width: 55vw;
+    width: 45vw;
     max-width: 320px;
     height: auto;
   }
@@ -1667,6 +1667,14 @@ a {
   }
 }
 
+@media (max-width: 430px) {
+  .hero-logo {
+    width: 40vw;
+  }
+  .hero-title {
+    font-size: clamp(24px, 4vw, 44px);
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * {
