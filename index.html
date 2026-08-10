@@ -2069,8 +2069,23 @@ a {
       .res-form-section select option {
         color: #444429;
       }
+      .res-form-section input[type="date"] {
+        position: relative;
+      }
+      .res-form-section input[type="date"]::before {
+        content: attr(data-placeholder);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: rgba(68, 68, 41, 0.6);
+        pointer-events: none;
+      }
+      .res-form-section input[type="date"]:valid::before {
+        display: none;
+      }
       .res-form-section input[type="date"]:invalid::-webkit-datetime-edit {
-        color: rgba(68, 68, 41, 0.6) !important;
+        color: transparent !important;
       }
     </style>
     <section class="sec sec-reservation" id="reservation">
@@ -2112,7 +2127,7 @@ a {
                   <div style="display:flex; align-items:flex-end; gap: 1rem; width:100%;">
                     <p class="kr" style="color:#444429; font-size:16px; min-width: 4.69vw; margin-bottom: 0.42vw;">방문일시</p>
                     <div style="display:flex; align-items:flex-end; gap: 0.63vw; width:100%;">
-                      <input required type="date" name="entry.626727524" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer;" />
+                      <input required type="date" name="entry.626727524" data-placeholder="연도. 월. 일." style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:100%; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer;" />
                       <select id="time-picker" style="border:none; border-bottom:1px solid rgba(68,68,41,0.4); background:transparent; color:#444429; outline:none; width:130px; flex-shrink:0; padding-bottom: 0.42vw; font-size:16px; font-family:var(--font-kr); cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20fill%3D%22%23444429%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20d%3D%22M7.247%2011.14L2.451%205.658C1.885%205.013%202.345%204%203.204%204h9.592a1%201%200%200%201%20.753%201.659l-4.796%205.48a1%201%200%200%201-1.506%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat:no-repeat; background-position:right 6px;">
                         <option value="" disabled selected>시간 선택</option>
                         <option value="10:30">오전 10:30</option>
