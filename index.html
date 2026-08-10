@@ -2939,6 +2939,15 @@ function handleReservationSubmit(e) {
     }
   });
 
+  // Force scroll to top on page reload
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+  window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+  });
+
     </script>
 
     <!-- figma:body-end -->
